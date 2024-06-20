@@ -1,0 +1,319 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* Section */
+section {
+    padding: 2rem;
+    margin: 1rem auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+}
+
+section h2 {
+    color: #333;
+    border-bottom: 2px solid #333;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+section p,
+section ul {
+    margin-bottom: 1rem;
+}
+
+/* Justify text in About section */
+.text-justify {
+    text-align: justify;
+}
+
+/* About Section */
+#about img {
+    max-width: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 1rem auto;
+}
+
+/* Experience and Skills */
+.job, .project {
+    margin-bottom: 1.5rem;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background: #eee;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+/* Timeline */
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #ddd;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.timeline-item {
+    padding: 20px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+.timeline-item::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    border: 4px solid #FF9F55;
+    top: 50%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.timeline-item.left {
+    left: 0;
+}
+
+.timeline-item.right {
+    left: 50%;
+}
+
+.timeline-item.right::after {
+    left: 0;
+}
+
+.timeline-content {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+}
+
+.timeline-content h3 {
+    margin-top: 0;
+    font-size: 1.25rem;
+}
+
+/* Card Styles */
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #007BFF;
+}
+
+.card-text {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* Links */
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Icon Styles */
+section h2:before {
+    content: '\f0c0'; /* Font Awesome user icon */
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    padding-right: 0.5rem;
+}
+
+#experience h2:before {
+    content: '\f0b1'; /* Font Awesome briefcase icon */
+}
+
+#skills h2:before {
+    content: '\f121'; /* Font Awesome code icon */
+}
+
+#languages h2:before {
+    content: '\f1ab'; /* Font Awesome language icon */
+}
+
+#education h2:before {
+    content: '\f19d'; /* Font Awesome graduation cap icon */
+}
+
+#interests h2:before {
+    content: '\f1e3'; /* Font Awesome star icon */
+}
+
+#contact h2:before {
+    content: '\f095'; /* Font Awesome phone icon */
+}
+
+/* Animation for scroll */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in.appear {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Hover effect on skills */
+.skill-item:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+/* Progress bar */
+.progress {
+    background-color: #f3f3f3;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.progress-bar {
+    width: 0;
+    height: 30px;
+    background-color: #007BFF;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    border-radius: 5px;
+    transition: width 1s ease-in-out;
+}
+
+/* Certificate link */
+.cert-link {
+    font-size: 0.9rem;
+    color: #007BFF;
+}
+
+/* Section Education */
+#education .card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#education .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+}
+
+#education .card-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #007BFF;
+}
+
+#education .card-text {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+
+/* Contact Section in Footer */
+#contact i {
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+#contact i:hover {
+    color: #d1d1d1;
+}
+
+#contact p {
+    font-size: 1.1rem;
+    color: #ffffff;
+    margin: 0;
+    line-height: 1.5;
+}
+
+#contact a {
+    color: inherit;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+#contact .col-md-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Ensure spacing to prevent overlap */
+#contact .row {
+    display: flex;
+    justify-content: space-around;
+}
+
+#contact .col-md-3 {
+    min-width: 200px;
+    margin: 10px 0;
+}
+
